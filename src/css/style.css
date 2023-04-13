@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+/***************************************** Navbar **********************************/
+.logo {
+  height: 120px;
+  width: 120px;
+}
+
+
+.nav-item {
+  text-decoration: none;
+  font-family: 'Dosis';
+  font-size: x-large;
+  font-weight: 500;
+  color: grey;
+  padding: 20px;
+}
+  
+a:hover {
+  background-color: rgb(92, 154, 132);
+  color: white;
+    
+}
+
+
+/********************************** Section Home ******************************/
+
+.position-relative {
+  display: flex;
+  left: 10px;
+  right: 90px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 140px;
+  margin-right:155px;
+    
+}
+  
+
+.figure-caption {
+  font-family: 'Dosis';
+  color: azure;
+  font-weight:bolder;
+  font-size: xx-large;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+
+.img-fluid {
+  display: flex;
+  height: 500px !important;
+  width: 1000px;
+}
+
+
+@media  (max-width: 390px) { 
+  .position-relative {
+    display: flex;
+    left: 0px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  figcaption {
+    right:90px
+  }
+  
+}
+  
+  
+  
+  @media (min-width: 392px) and (max-width: 576px) { 
+    .position-relative {
+      display: flex;
+      left: 0px;
+      margin-top: 40px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  
+    figcaption {
+      right:90px
+    }
+  
+  }
+  
+  
+  
+  @media (min-width: 576px) and (max-width: 768px) { 
+    .position-relative {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  
+    figcaption {
+        right:90px
+    }
+  
+  }
+  
+  
+  
+  @media (min-width: 768px) and (max-width: 992px) { 
+    .position-relative {
+        display: flex;
+        left: 0px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+  
+    figcaption {
+        right:90px
+    }
+  
+  }
+  
+  
+  @media (min-width: 992px) and (max-width: 1400px) { 
+    .position-relative {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+  }
+  
+
+
+/************************************* Section Gallerie ******************************/
+
+
+h2 {
+  background-color: rgb(176, 105, 178);
+  margin: auto;
+  color: azure;
+  border-radius: 15px;
+  width: 370px;
+  height: 120px;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #198754;
+  font-family: 'Dosis';
+  width: 100px;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+#filters{
+  display: flex;
+  justify-content: center;
+  gap: 30px
+}
+
+#filters button{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+    
+}
+
+#gallery .active{
+  width: 40%;
+  padding: 5px;
+  transition: width .3s;
+}
+
+#gallery .inactive{
+  width: 0;
+  padding: 0;
+  transition: width .3s;
+}
+
+
+/*********************************** SECTION Tarif ***************************/
+#Tarifs {
+  background-color: cadetblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  background-color: rgb(176, 105, 178);
+  margin: auto;
+  color: #F8F9F9;
+  font-family: 'Dosis';
+  font-size: 2rem;
+  color: azure;
+  border-radius: 15px;
+  width: 370px;
+  height: 120px;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.container {
+  margin: auto;
+  display: grid;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card {
+  margin: auto;
+  margin-top: 30px;
+  
+}
+
+
+/*********************************** Contact ********************************/
+
+#contact {
+  background-image: url(https://img.freepik.com/vecteurs-libre/portrait-famille-dessine-main-dans-cadre_23-2148114991.jpg?size=626&ext=jpg);
+  background-size: cover;
+  background-repeat: round;
+
+}
+
+.container-fluid {
+    
+  border: solid 10px grey;
+  border-radius: 280px;
+  margin: auto;
+  position: relative;
+  top: 0;
+  bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(92, 161, 161, .8);
+  height: 500px;
+  width: 500px !important;
+}
+
+
+  
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 200px;
+  height: 300px;
+}
+  
+  
+h4 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 50px;
+  color: azure;
+  border-radius: 15px;
+  width: 370px;
+  height: 120px;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+
+  
+#email {
+  margin: auto;
+  margin-top: 5px;
+}
+
+
+#message {
+  margin: auto;
+  margin-top: 20px;
+  width: 400px;
+  
+}
+
+
+.boutton {
+  width: 150px;
+  height: 45px;
+  background-color: green;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: white;
+  color: white;
+}
+
+@media (min-width: 280px) and (max-width: 992px) { 
+  .Container-fluid {
+    width: 290px !important;
+    height: 400px;
+   
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  h2 {
+    font-size: small;
+    width: 200px;
+  }
+  #email {
+    margin-left: 170px;
+  }
+  #message {
+    width: 190px;
+    margin-left: 190px;
+  }
+  .boutton {
+    margin-left: 170px;
+  }
+
+}
+/************************************* FOOTER************************************/
+
+.footer  {
+    height: 80px;
+    background-color: #F8F9F9;
+    color: black;
+    border-top: solid 1px #F8F9F9;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+   
+  }
+  
+  #copyright {
+    margin-bottom: 0px;
+    font-family: 'Dosis';
+    
+  }
+    

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{Data.mainTitle}}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- Start section Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-md">
+                <img class="logo" src={{Data.logo}} alt="logo"></img>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Acceuil">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#Gallerie">Gallerie</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#Tarifs">Tarif</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                                        
+                <ul>
+            </div>
+        </nav>
+
+    </header>
+    
+<!-- End section Header -->
+
+
+<!-- Start section Acceuil -->
+
+    <section id="Acceuil">
+        
+            <div class="container">
+                <figure class="position-relative">
+                    <img src= {{Data.data_figure}} class="figure-img img-fluid rounded" alt="photography">
+                    <figcaption class="figure-caption"><h1>{{Data.figcaptionTitle}}</h1></figcaption>
+                </figure>
+            </div>
+
+    </section>
+
+<!-- End section Acceuil -->
+
+    
+<!-- Start section Gallerie -->
+    
+    <section id="Gallerie">
+        <h2>Gallerie</h2>
+        <div class="container">
+            <section id="filters">
+                <button class="btn" type="button" id="all">Tout</button>
+                <button class="btn" type="button" id="couple">Couple</button>
+                <button class="btn" type="button" id="baby">Baby</button>
+                <button class="btn" type="button" id="famille">Famille</button>
+                <button class="btn" type="button" id="mariage">Mariage</button>
+                <button class="btn" type="button" id="pregnary">Pregnary</button>
+                <button class="btn" type="button" id="baptized">Baptized</button>
+            </section>
+        
+
+            <div id="gallery">
+                <img src= {{Data.data_Mariage}} alt="Mariage" data-mariage class="active">
+                <img src= {{Data.data_Baptized}} alt="Baptized" data-baptized class="active">
+                <img src= {{Data.data_Couple}} alt="Couple" data-couple class="active">
+                <img src= {{Data.data_Famille}} alt="Famille" data-famille data-flower class="active">
+                <img src= {{Data.data_Pregnary}} alt="Pregnary" data-pregnary class="active">
+                <img src= {{Data.data_Baby}} alt="Baby" data-baby class="active">
+            </div>
+        </div>
+
+        <script>
+            let filters = document.querySelectorAll("#filters button");
+
+            for(let filter of filters){
+                filter.addEventListener("click", function(){
+                    let tag = this.id;
+
+                    let images = document.querySelectorAll("#gallery img");
+
+                    for(let image of images){
+                        image.classList.replace("active", "inactive");
+
+                        if(tag in image.dataset || tag === "all"){
+                            image.classList.replace("inactive", "active");
+                        }
+                    }
+                });
+            }
+        </script>
+    </section>
+
+<!-- End section Gallerie -->
+
+
+
+<!-- Start section Tarif/Services -->
+
+    <section id="Tarifs">
+        <div class="container">
+            <h3>Tarif/Services</h3>
+                
+            <div class="card" style="width: 40rem;">
+            <img src={{Data.data_PourDeux}} class="card-img-top" alt="picture">
+            <div class="card-body">
+                <Card.Title>{{Data.cardTitle_1}}</Card.Title>
+                <p class="card-text">{{Data.cardText_1}}</p>
+                <Card.Text>{{Data.cardTarif_1}}</Card.Text>
+            </div>
+            </div>
+            
+
+            
+            <div class="card" style="width: 40rem;">
+            <img src={{Data.data_Famille}} class="card-img-top" alt="picture">
+            <div class="card-body">
+                <Card.Title>{{Data.cardTitle_2}}</Card.Title>
+                <p class="card-text">{{Data.cardText_2}}</p>
+                <Card.Text>{{Data.cardTarif_2}}</Card.Text>
+            </div>
+            </div>
+            
+
+            
+            <div class="card" style="width: 40rem;">
+            <img src={{Data.data_JusteMoi}} class="card-img-top" alt="picture">
+            <div class="card-body">
+                <Card.Title>{{Data.cardTitle_3}}</Card.Title>
+                <p class="card-text">{{Data.cardText_3}}</p>
+                <Card.Text>{{Data.cardTarif_3}}</Card.Text>
+            </div>
+            </div>
+        
+            
+            <div class="card" style="width: 40rem;">
+            <img src={{Data.data_Pregnary}} class="card-img-top" alt="picture">
+            <div class="card-body">
+                <Card.Title>{{Data.cardTitle_4}}</Card.Title>
+                <p class="card-text">{{Data.cardText_4}}</p>
+                <Card.Text>{{Data.cardTarif_4}}</Card.Text>
+            </div>
+            </div>
+            
+
+            
+            <div class="card" style="width: 40rem;">
+            <img src={{Data.data_Baby}} class="card-img-top" alt="picture">
+            <div class="card-body">
+                <Card.Title>{{Data.cardTitle_5}}</Card.Title>
+                <p class="card-text">{{Data.cardText_5}}</p>
+                <Card.Text>{{Data.cardTarif_5}}</Card.Text>
+            </div>
+            </div>
+            
+            
+            
+            <div class="card" style="width: 40rem;">
+            <img src={{Data.data_Immortalize}} class="card-img-top" alt="picture">
+            <div class="card-body">
+                <Card.Title>{{Data.cardTitle_6}}</Card.Title>
+                <p class="card-text">{{Data.cardText_6}}</p>
+                <Card.Text>{{Data.cardTarif_6}}</Card.Text>
+            </div>
+            
+        </div>
+          
+    </section>
+<!-- End section Tarif/services -->
+
+
+
+<!-- Start section Contact -->
+
+    <section id='contact'>
+        
+            <div class='container-fluid'>
+                <form class='contact-wrapper' action="https://formspree.io/f/mnqyzvrz" method="POST">
+                <h4 id='title'>Contact<br></br> Quantin Photographe!</h4>
+                        <label id="email">
+                            
+                            <input type="email" name="email" placeholder='Enter your email'>
+                        </label>
+                        <label id="message">
+                            
+                            <textarea name="message" placeholder='Ecrivez votre message'></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button class='boutton' type="submit">Send</button>
+                    </form>
+            </div>
+    </section>
+
+<!-- End section Contact -->
+
+
+<!-- Start Footer -->
+
+    <footer class="footer bg-body-tertiary">
+        <p id="copyright">{{Data.Footer}}</p>
+    </footer>
+
+<!-- End Footer -->
+    
+    
+</body>
+
+</html>

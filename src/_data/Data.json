@@ -1,0 +1,70 @@
+{
+    
+
+    "logo": "https://ilyes-benyahia-etudiant.github.io/Projet-React/static/media/logo.9a59f6d7f89981189b50.png",
+
+
+    
+    "mainTitle": "Photographe",
+
+
+    "figcaptionTitle": "Charles Quantin - Photographe",
+
+    
+    "data_figure":      "https://ilyes-benyahia-etudiant.github.io/Projet-React/static/media/Photography.4af5a6d7e4fbe4701316.jpg",
+
+
+    
+
+    "data_Mariage":     "https://cdn.pixabay.com/photo/2017/08/06/20/11/wedding-2595862__340.jpg",
+    "data_Couple":      "https://cdn.pixabay.com/photo/2016/10/30/17/49/couple-1783843__340.jpg",
+    "data_Baby":        "https://cdn.pixabay.com/photo/2016/11/19/14/28/bed-1839564__340.jpg",
+    "data_Pregnary":    "https://media.istockphoto.com/id/1323431279/photo/healthy-pregnancy-side-view-pregnant-woman-with-big-belly-advanced-pregnancy-in-hands-banner.jpg?b=1&s=170667a&w=0&k=20&c=8RS5Y6uDcgqQr07_sCLD-dZVGsTK6JCpaF_qGb8OA9A=",
+    "data_Famille":     "https://cdn.pixabay.com/photo/2017/10/13/12/29/hands-2847508__340.jpg",
+    "data_Baptized":    "https://media.istockphoto.com/id/172165207/photo/baptism.jpg?b=1&s=170667a&w=0&k=20&c=ZdqpjjF5t6eggflAwgDrd0LRKMA0DGEEgCuT2ia7Xyc=",
+    "data_PourDeux":    "https://cdn.pixabay.com/photo/2015/03/30/12/35/sunset-698501__340.jpg",
+    "data_JusteMoi":    "https://media.istockphoto.com/id/1328075100/photo/hiker-asian-woman-happy-feeling-freedom-good-and-strong-weight-victorious-facing-on-the.jpg?b=1&s=170667a&w=0&k=20&c=pgG1sRLLn4MkUViq7mZib2nve6qxsUf5MBddX6m1hXI=",
+    "data_Immortalize": "https://cdn.pixabay.com/photo/2017/07/06/17/53/greeting-card-2478787__340.jpg",
+
+
+
+
+    
+
+    "cardTitle_1": "« Pour deux »",
+    "cardText_1": "Pour deux personnes, en extérieur ou en studio",
+    "cardTarif_1": "195 euros",
+
+
+    "cardTitle_2": "« Famille »",
+    "cardText_2": "Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio 30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans)",
+    "cardTarif_2": "220 euros",
+
+
+    "cardTitle_3": "« Juste moi »",
+    "cardText_3": "Séance pour une personne, en extérieur ou en studio",
+    "cardTarif_3": "130 euros",
+
+
+    "cardTitle_4": "« Il était une fois »",
+    "cardText_4": "Photo de grossesse (À votre domicile, en extérieur ou en studio)",
+    "cardTarif_4": "160 euros",
+
+
+    "cardTitle_5": "« Mon bébé »",
+    "cardText_5": "Photo d’enfant jusqu’à 3 ans (photo à domicile)",
+    "cardTarif_5": "100 euros",
+
+
+    "cardTitle_6": "« J’immortalise l’événement »",
+    "cardText_6": "Prestation de mariage ou baptême sur devis",
+    "cardTarif_6": "sur mesure",
+
+
+
+
+
+    "Footer": "Copyright © | 2023 Tous droits reservées"
+
+    
+}
